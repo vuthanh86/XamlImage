@@ -1,0 +1,13 @@
+﻿<Window x:Class="XamlImage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:xamlImage="clr-namespace:XamlImage"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <xamlImage:FileToUIElementConverter x:Key="uriToUIElementConverter"/>
+    </Window.Resources>
+    <Grid>
+        <!--<Image Stretch="Fill" Source="{Binding Converter={StaticResource uriToUIElementConverter},ConverterParameter=Images/MyVectorContent.xaml}"/>-->
+        <Image Stretch="Fill" Source="{Binding MyImage}" />
+    </Grid>
+</Window>

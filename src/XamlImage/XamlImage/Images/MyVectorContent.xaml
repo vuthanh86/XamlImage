@@ -1,0 +1,21 @@
+﻿<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <DrawingImage.Drawing>
+        <GeometryDrawing>
+            <GeometryDrawing.Geometry>
+                <GeometryGroup>
+                    <EllipseGeometry Center="50,50" RadiusX="45" RadiusY="20" />
+                    <EllipseGeometry Center="50,50" RadiusX="20" RadiusY="45" />
+                </GeometryGroup>
+            </GeometryDrawing.Geometry>
+            <GeometryDrawing.Brush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0.0" Color="Blue" />
+                    <GradientStop Offset="1.0" Color="#CCCCFF" />
+                </LinearGradientBrush>
+            </GeometryDrawing.Brush>
+            <GeometryDrawing.Pen>
+                <Pen Thickness="10" Brush="Black" />
+            </GeometryDrawing.Pen>
+        </GeometryDrawing>
+    </DrawingImage.Drawing>
+</DrawingImage>
